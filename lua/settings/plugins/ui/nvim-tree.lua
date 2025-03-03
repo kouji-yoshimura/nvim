@@ -34,6 +34,11 @@ return {
           max_folder_discovery = 100,
           exclude = { '.git', 'target', 'build' },
         },
+        open_file = {
+          window_picker = {
+            enable = false,
+          },
+        }
       },
       on_attach = require('settings.plugins.ui.extensions.nvim-tree-actions').on_attach,
     }

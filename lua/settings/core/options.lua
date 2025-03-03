@@ -39,6 +39,7 @@ opt.iskeyword:append("=")
 opt.conceallevel = 1
 opt.laststatus = 3
 opt.scrolloff = 8
+opt.sidescrolloff = 8
 opt.autoindent = true
 opt.whichwrap = "b,s,h,l,<,>,[,]"
 opt.tabstop = 4

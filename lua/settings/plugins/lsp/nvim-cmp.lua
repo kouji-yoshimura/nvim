@@ -13,6 +13,7 @@ return {
   config = function()
     local cmp = require('cmp')
     local act = require('settings.plugins.lsp.extensions.nvim-cmp-actions')
+	local luasnip = require('luasnip')
 
     local map = cmp.mapping
 
