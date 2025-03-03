@@ -39,7 +39,7 @@ opt.iskeyword:append("=")
 opt.conceallevel = 1
 opt.laststatus = 3
 opt.scrolloff = 8
-opt.sidescrolloff = 8
+opt.sidescrolloff = 12
 opt.autoindent = true
 opt.whichwrap = "b,s,h,l,<,>,[,]"
 opt.tabstop = 4
@@ -55,3 +55,21 @@ opt.listchars:append {
   trail = space,
   nbsp = space
 }
+
+vim.api.nvim_create_autocmd({ 'BufEnter', 'BufWinEnter' }, {
+  pattern = '*.lua',
+  callback = function()
+    vim.api.nvim_buf_set_option(0, 'tabstop', 2)
+    vim.api.nvim_buf_set_option(0, 'shiftwidth', 0)
+    vim.api.nvim_buf_set_option(0, 'expandtab', true)
+  end,
+})
+
+vim.api.nvim_create_autocmd({ 'BufEnter', 'BufWinEnter' }, {
+  pattern = '*.go',
+  callback = function()
+    vim.api.nvim_buf_set_option(0, 'tabstop', 4)
+    vim.api.nvim_buf_set_option(0, 'shiftwidth', 0)
+    vim.api.nvim_buf_set_option(0, 'expandtab', false)
+  end,
+})

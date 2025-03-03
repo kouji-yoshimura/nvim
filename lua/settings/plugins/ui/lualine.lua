@@ -5,9 +5,17 @@ return {
     require('lualine').setup {
       options = {
         theme = 'base16',
+        component_separators = {},
+        section_separators = {},
       },
       sections = {
+        lualine_b = { 'branch' },
         lualine_c = {
+          "'%='",
+          {
+            'diff',
+            symbols = {added = ' ', modified = ' ', removed = ' '},
+          },
           {
             'diagnostics',
             sources = { 'nvim_diagnostic', 'nvim_lsp' },
