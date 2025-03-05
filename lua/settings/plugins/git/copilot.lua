@@ -1,6 +1,7 @@
 return {
   "zbirenbaum/copilot.lua",
   cmd = "Takeoff",
+  event = "InsertEnter",
   config = function()
     require("copilot").setup {
       suggestion = { enabled = false },

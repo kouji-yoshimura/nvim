@@ -6,7 +6,8 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
     vim.api.nvim_echo({
       { "Failed to clone lazy.nvim:\n", "ErrorMsg" },
       { out, "WorningMsg" },
-      { "\nPress any key to exit..." },
+      { "" },
+      { "Press any key to exit..." },
     }, true, {})
     vim.fn.getchar()
     os.exit(1)
@@ -17,6 +18,8 @@ vim.opt.rtp:prepend(lazypath)
 require("lazy").setup({
   { import = "settings.plugins" },
   { import = "settings.plugins.colorscheme.vim-hybrid" },
+  { import = "settings.plugins.git.copilot-chat" },
+  { import = "settings.plugins.git.copilot-cmp" },
   { import = "settings.plugins.git.copilot" },
   { import = "settings.plugins.git.gitsigns" },
   { import = "settings.plugins.lsp.copilot-cmp" },
@@ -32,5 +35,7 @@ require("lazy").setup({
   { import = "settings.plugins.ui.nvim-scrollbar" },
   { import = "settings.plugins.ui.nvim-tree" },
   { import = "settings.plugins.ui.telescope" },
+  -- { import = "settings.plugins.ui.which-key" },
+  { import = "settings.plugins.viewer.markdown-preview" },
   { import = "settings.plugins.viewer.nvim-treesitter" },
 })
