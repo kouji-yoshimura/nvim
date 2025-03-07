@@ -15,4 +15,5 @@ map('n', 'x', '"_x', opts)
 map('n', 'X', '"_X', opts)
 map('n', 's', '"_s', opts)
 
-
+vim.api.nvim_set_keymap('n', 'bp', ':bp<CR>', { noremap = true, silent = true})
+vim.api.nvim_set_keymap('n', 'bn', ':bn<CR>', { noremap = true, silent = true})

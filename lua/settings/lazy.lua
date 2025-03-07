@@ -18,10 +18,12 @@ vim.opt.rtp:prepend(lazypath)
 require("lazy").setup({
   { import = "settings.plugins" },
   { import = "settings.plugins.colorscheme.vim-hybrid" },
+  { import = "settings.plugins.colorscheme.everforest" },
   { import = "settings.plugins.git.copilot-chat" },
   { import = "settings.plugins.git.copilot-cmp" },
   { import = "settings.plugins.git.copilot" },
   { import = "settings.plugins.git.gitsigns" },
+  { import = "settings.plugins.git.lazygit" },
   { import = "settings.plugins.lsp.copilot-cmp" },
   { import = "settings.plugins.lsp.friendly-snippets" },
   { import = "settings.plugins.lsp.lua-snip" },

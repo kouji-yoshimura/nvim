@@ -54,7 +54,7 @@ local command = {
   { 'a',       fs.create,                          'Create' },
   { '',        api.marks.bulk.move,                'Move Bookmarked' },
   { 'B',       tree.toggle_no_buffer_filter,       'Toggle No Buffer' },
-  { '',        fs.copy.node,                       'Copy' },
+  { 'c',       fs.copy.node,                       'Copy' },
   { 'C',       tree.toggle_git_clean_filter,       'Toggle Git Clean' },
   { '[c',      node.navigate.git.prev,             'Prev Git' },
   { ']c',      node.navigate.git.next,             'Next Git' },

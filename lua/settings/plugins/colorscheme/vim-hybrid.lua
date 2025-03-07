@@ -1,7 +1,7 @@
 return {
-  "HoNamDuong/hybrid.nvim",
+  'HoNamDuong/hybrid.nvim',
   priority = 1000,  -- Load this first
   config = function()
-      vim.cmd.colorscheme("hybrid")
+      -- vim.cmd.colorscheme('hybrid')
   end
 }
