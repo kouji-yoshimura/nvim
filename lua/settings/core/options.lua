@@ -1,8 +1,5 @@
 local opt = vim.opt
 
--- vim.cmd.colorscheme('everforest')
-vim.g.everforest_background = 'hard'
-
 opt.foldenable = true
 opt.foldcolumn = "0"
 opt.foldlevel = 99 -- Using ufo provider need a large value, feel free to decrease the value
