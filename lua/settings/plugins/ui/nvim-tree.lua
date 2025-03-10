@@ -10,6 +10,7 @@ return {
     vim.api.nvim_set_var('loaded_netrw', 1)
     vim.api.nvim_set_var('loaded_netrwPlugin', 1)
     vim.api.nvim_create_user_command('Ex', function() vim.cmd.NvimTreeToggle() end, {})
+    vim.keymap.set('n', '<leader>q', ':NvimTreeToggle<CR>', { desc = 'Toggle NvimTree' })
 
     require("nvim-tree").setup {
       renderer = {
