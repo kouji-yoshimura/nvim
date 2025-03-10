@@ -17,8 +17,9 @@ vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
   { import = "settings.plugins" },
-  { import = "settings.plugins.colorscheme.vim-hybrid" },
   { import = "settings.plugins.colorscheme.everforest" },
+  { import = "settings.plugins.colorscheme.gluvbox" },
+  { import = "settings.plugins.colorscheme.vim-hybrid" },
   { import = "settings.plugins.git.copilot-chat" },
   { import = "settings.plugins.git.copilot-cmp" },
   { import = "settings.plugins.git.copilot" },
@@ -38,6 +39,7 @@ require("lazy").setup({
   { import = "settings.plugins.ui.nvim-tree" },
   { import = "settings.plugins.ui.telescope" },
   -- { import = "settings.plugins.ui.which-key" },
+  { import = "settings.plugins.ui.whitespace" },
   { import = "settings.plugins.viewer.markdown-preview" },
   { import = "settings.plugins.viewer.nvim-treesitter" },
 })
